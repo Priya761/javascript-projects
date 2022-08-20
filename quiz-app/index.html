@@ -9,6 +9,28 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">Question</h2>
+            <ul>
+                <!-- Only one 'radio' button in a group can be selected at the same time. -->
+                <!-- The 'label' tag defines a text label for the tag. The label is a normal text, by clicking which, the user can select the form element. It facilitates the use of the form, since it is not always convenient to get into form elements with the cursor. -->
+                <!-- The 'name' attribute specifies the name of an element. The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted. -->
+                <li>
+                    <input type="radio" id="a" name="answer" class="option"><label for="a" id="a_text">option</label>
+                </li>   
+                <li>
+                    <input type="radio" id="b" name="answer" class="option"><label for="b" id="b_text">option</label>
+                </li>
+                <li>
+                    <input type="radio" id="c" name="answer" class="option"><label for="c" id="c_text">option</label>
+                </li>
+                <li>
+                    <input type="radio" id="d" name="answer" class="option"><label for="d" id="d_text">option</label>
+                </li>
+            </ul>
+        </div>
+        <button id="submit">Submit</button>
+    </div>
 </body>
 </html>
